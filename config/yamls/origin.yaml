@@ -1,0 +1,39 @@
+num_classes: 7
+num_atoms: 4608 # 512 * 9
+num_edges: 1536 # 512 * 3
+num_in_degree: 512
+num_out_degree: 512
+num_spatial: 512
+num_edge_dis: 128
+multi_hop_max_dist: 5  # sometimes is 20
+spatial_pos_max: 1024
+edge_type: "multi_hop"
+max_nodes: 512
+share_input_output_embed: False
+num_hidden_layers: 12
+embedding_dim: 768
+ffn_embedding_dim: 768
+num_attention_heads: 32
+dropout: 0.1
+attention_dropout: 0.1
+activation_dropout: 0.1
+layerdrop: 0.0
+encoder_normalize_before: False
+pre_layernorm: False
+apply_graphormer_init: False
+activation_fn: "gelu"
+embed_scale: None
+freeze_embeddings: False
+num_trans_layers_to_freeze: 0
+traceable: False
+q_noise: 0.0
+qn_block_size: 8
+kdim: None
+vdim: None
+bias: True
+self_attention: True
+pad_token_id: 0
+bos_token_id: 1
+eos_token_id: 2
+pretrained_model_name: "pcqm4mv1_graphormer_base"
+loadModelPath: "D:\\Documents\\Post-Lab\\Papers\\AAAI2025-change\\code\\loadCheckpoints\\graphormer-base-pcqm4mv1\\pytorch_model.bin"
